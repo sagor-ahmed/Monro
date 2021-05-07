@@ -18,9 +18,9 @@
     .container {
         max-width: 1320px;
     }
-    
-   .store-section .container{
-        max-width: 1130px!important;
+
+    .store-section .container {
+        max-width: 1130px !important;
     }
 }
 
@@ -122,7 +122,7 @@
     /*main menu*/
     .main-menu ul li a {
         font-size: 1.4rem;
-        margin-left: 1rem;
+        margin-left: 0.8rem;
     }
 
     /*store*/
@@ -288,6 +288,10 @@
         margin-bottom: 2.5rem;
     }
 
+    .video-content {
+        margin-bottom: 2.5rem;
+    }
+
     .counter-item {
         margin-bottom: 25px;
     }
@@ -364,9 +368,34 @@
         padding: 18px !important;
     }
 
+    .signin-left h2 {
+        font-size: 35px;
+    }
+
+    .signin-right h3 {
+        font-size: 35px;
+    }
+
     /*about*/
+    .about-section.pb-30 {
+        padding-bottom: 0px !important;
+    }
+
     .about-content {
         margin-bottom: 2.5rem;
+    }
+
+    .about-title {
+        font-size: 2.7rem;
+    }
+
+    .video-content h2 {
+        font-size: 27px;
+        line-height: 33px;
+    }
+
+    .video-section.pt-50 {
+        padding-top: 30px !important;
     }
 
     /*counter*/

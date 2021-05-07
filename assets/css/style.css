@@ -208,15 +208,19 @@ p {
 .mb-15 {
     margin-bottom: 15px !important;
 }
-.mb-20{
+
+.mb-20 {
     margin-bottom: 20px;
 }
+
 .mt-30 {
     margin-top: 30px;
 }
-.pr-0{
-    padding-right: 0px!important;
+
+.pr-0 {
+    padding-right: 0px !important;
 }
+
 .mr-15 {
     margin-right: 15px;
 }
@@ -277,9 +281,9 @@ a.slider-btn {
 }
 
 .slider-btn:hover {
-	color: #000;
-	-webkit-box-shadow: inset 0 -3.25em 0 0 #fff;
-	box-shadow: inset 0 -3.25em 0 0 #fff;
+    color: #000;
+    -webkit-box-shadow: inset 0 -3.25em 0 0 #fff;
+    box-shadow: inset 0 -3.25em 0 0 #fff;
 }
 
 .about-btn {
@@ -306,16 +310,16 @@ a.slider-btn {
 }
 
 .about-btn::before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 0%;
-	height: 100%;
-	background: #292929;
-	z-index: -1;
-	-webkit-transition: all .3s;
-	transition: all .3s;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #292929;
+    z-index: -1;
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
 
 .about-btn:hover {
@@ -568,28 +572,28 @@ p.subtitle {
 }
 
 .buy-btn {
-	background: #000;
-	background: linear-gradient(109.27deg,#11998e -4.35%,#38ef7d 101.58%);
-	width: 100%;
-	display: block;
-	text-align: center;
-	white-space: nowrap;
-	color: #fff;
-	padding: 8px;
-	border-radius: 4px;
-	font-size: 1.7rem;
-	z-index: -1;
-	position: relative;
-	opacity: 0;
-	-webkit-transition: all .3s linear;
-	transition: all .3s linear;
+    background: #000;
+    background: linear-gradient(109.27deg, #11998e -4.35%, #38ef7d 101.58%);
+    width: 100%;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 
-.buy-btn:hover{
-    background-image: linear-gradient(109.27deg,#38ef7d -4.35%,#11998e 101.58%);
-  -webkit-transition: .3s;
-  transition: .3s;
+.buy-btn:hover {
+    background-image: linear-gradient(109.27deg, #38ef7d -4.35%, #11998e 101.58%);
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 .store-item:hover .buy-btn {
@@ -635,8 +639,103 @@ p.subtitle {
     height: 100%;
 }
 
+
+
 /*===================================================================================*/
-/*  06. COUNTER CSS START
+/*  06. VIDEO CSS START
+/*===================================================================================*/
+
+/*video css*/
+
+.video-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(5, 108, 95, 0.8);
+    width: 95%;
+    height: 100%;
+}
+.video-content h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 19px;
+}
+
+.play-btn {
+    width: 85px;
+    height: 85px;
+    background: #E56950;
+    border-radius: 99999px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+.pink-bg{
+    background: #E56950!important;
+}
+.play-btn:hover {
+    background: #f8a683;
+    color: #000;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.video-btn a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.play-btn i {
+    color: #fff;
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/*===================================================================================*/
+/*  07. COUNTER CSS START
 /*===================================================================================*/
 
 .counter-area {
@@ -691,7 +790,7 @@ p.subtitle {
 }
 
 /*===================================================================================*/
-/*  07. TESTIMONIAL CSS START
+/*  08. TESTIMONIAL CSS START
 /*===================================================================================*/
 
 .testimonial-area .section-title h2 {
@@ -795,11 +894,6 @@ p.subtitle {
     transition: .4s;
 }
 
-/*.testimonial-item:hover {
-    border: 2px solid #787878;
-    -webkit-box-shadow: 2px 15px 14px rgba(10, 10, 10, 0.2);
-    box-shadow: 2px 15px 14px rgba(10, 10, 10, 0.2);
-}*/
 .testimonial-slider .owl-item.active:nth-child(2) {
     border: .2rem solid #787878;
     -webkit-box-shadow: 2px 15px 14px rgba(10, 10, 10, 0.2);
@@ -808,12 +902,6 @@ p.subtitle {
 
 
 /*slick slide*/
-
-
-/*.slick-initialized .slick-slide {
-    display: block;
-    margin-right: 50px;
-}*/
 
 .testimonial-area .slick-slide img {
     display: inline;
@@ -847,13 +935,6 @@ p.subtitle {
     left: auto;
 }
 
-/*
-.testimonial-slide-center-mode-style{
-       border: 2px solid #787878;
-    -webkit-box-shadow: 2px 15px 14px rgba(10, 10, 10, 0.2);
-    box-shadow: 2px 15px 14px rgba(10, 10, 10, 0.2); 
-}
-*/
 .testimonial-item.text-center.slick-slide.slick-current.slick-active.slick-center {
     -webkit-box-shadow: 2px 15px 14px rgba(10, 10, 10, 0.2);
     box-shadow: -3px 7px 14px rgb(10 10 10 / 20%);
@@ -863,7 +944,7 @@ p.subtitle {
 }
 
 /*===================================================================================*/
-/*  08. FOOTER CSS START
+/*  09. FOOTER CSS START
 /*===================================================================================*/
 
 .footer-widget {
