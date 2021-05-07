@@ -1,0 +1,501 @@
+ <!DOCTYPE html>
+ <html class="no-js" lang="ZXX">
+
+ <head>
+     <meta charset="utf-8">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <title>Sycho - Psychology and Counseling HTML5 Template</title>
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Place favicon.ico in the root directory -->
+     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.jpg">
+
+     <!-- CSS here -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="assets/css/animate.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="assets/css/meanmenu.css">
+     <link rel="stylesheet" href="assets/css/slick.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/responsive.css">
+     <style>
+         /* body {background: #007bff;background: linear-gradient(to right, #0062E6, #33AEFF);}*/
+         /* .registration-form {padding: 50px 0;}.registration-form form {background-color: #fff;max-width: 600px;margin: auto;padding: 50px 70px;border-top-left-radius: 30px;border-top-right-radius: 30px;box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);}.registration-form .form-group .form-control {font-size: 16px !important;}.registration-form .form-icon {text-align: center;background-color: #5891ff;border-radius: 50%;font-size: 40px;color: white;width: 100px;height: 100px;margin: auto;margin-bottom: 50px;line-height: 100px;}.registration-form .item {border-radius: 20px;margin-bottom: 25px;padding: 10px 20px;}.registration-form .create-account {border-radius: 30px;padding: 10px 20px;font-size: 18px;font-weight: bold;background-color: #5791ff;border: none;color: white;margin-top: 20px;}.registration-form .social-media {max-width: 600px;background-color: #fff;margin: auto;padding: 35px 0;text-align: center;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;color: #9fadca;border-top: 1px solid #dee9ff;box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);}.registration-form .social-icons {margin-top: 30px;margin-bottom: 16px;}.registration-form .social-icons a {font-size: 23px;margin: 0 3px;color: #5691ff;border: 1px solid;border-radius: 50%;width: 45px;display: inline-block;height: 45px;text-align: center;background-color: #fff;line-height: 45px;}.registration-form .social-icons a:hover {text-decoration: none;opacity: 0.6;}@media (max-width: 576px) {.registration-form form {padding: 50px 20px;}.registration-form .form-icon {width: 70px;height: 70px;font-size: 30px;line-height: 70px;}}*/
+
+
+         /*register area css*/
+
+         .register-area input[type="text"],
+         input[type="email"],
+         input[type="number"],
+         select,
+         textarea {
+             width: 100%;
+             border: 1px solid #ccc;
+             padding: 7px;
+             border-radius: 3px;
+             color: #757575;
+             margin-bottom: 15px;
+         }
+
+         select#find-us {
+             height: 42px;
+         }
+
+         .register-area input:focus {
+             outline: none;
+         }
+
+         select:focus {
+             outline: none;
+         }
+
+         input::placeholder {
+             font-size: 16px;
+         }
+
+         select::placeholder {
+             font-size: 16px;
+             color: red;
+         }
+
+         .register-title h3 {
+             font-size: 17px;
+             color: #635252;
+             font-weight: 500;
+             margin-bottom: 15px;
+         }
+
+         .register-title h2 {
+             font-size: 35px;
+             color: #333;
+             margin-bottom: 11px;
+         }
+
+         .register-btn,
+         .register-btn:active,
+         .register-btn:link {
+             padding: 6px 33px 8px 30px;
+             font-size: 18px;
+             background: #000;
+             border-radius: 0.3rem;
+             color: #fff;
+             transition: .3s;
+             border: 2px solid transparent;
+             margin-top: 0px;
+             display: inline-block;
+         }
+
+         .register-btn:hover {
+             background: #fff;
+             color: #000;
+             border-color: #000;
+         }
+
+         .register-area #register-form label span {
+             color: red;
+         }
+
+         .register-title p span {
+             color: red;
+         }
+
+
+         @media (max-width: 767px) {
+             .register-area.pb-100.pt-100 {
+                 padding: 60px 0 60px 0;
+             }
+             .register-title h2 {
+                 font-size: 33px;
+             }
+         }
+
+         @media (max-width: 575px) {
+             .register-area.pb-100.pt-100 {
+                 padding: 30px 0 30px 0;
+             }
+
+             .register-title h2 {
+                 font-size: 27px;
+             }
+         }
+
+     </style>
+ </head>
+
+ <body>
+
+
+     <!-- ===================================================== HEADER AREA START =================================================== -->
+
+     <header>
+         <!-- topbar area-->
+         <div class="topbar-area topbar-bg">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-6 col-md-6 col-sm-8">
+                         <div class="header-cta">
+                             <span><i class="fas fa-phone"></i> +44-856945-5896</span>
+                             <span><i class="far fa-envelope"></i> demo@example.com</span>
+                         </div>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-4">
+                         <div class="header-login">
+                             <span> <a href="login.html">Login /</a> <a href="register.html">register</a></span>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!--header area-->
+         <div class="header-area" id="header-sticky">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-4 col-md-3">
+                         <div class="logo">
+                             <a href="index.html"><img src="assets/img/Monroe_logo.png" alt="header logo"></a>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-6">
+                         <div id="mobile-menu" class="main-menu">
+                             <nav>
+                                 <ul>
+                                     <li><a href="index.html">Home</a></li>
+                                     <li><a href="#about">About</a></li>
+                                     <li><a href="privacyandpolicy.html">Privacy & Policy</a></li>
+                                     <li><a href="login.html">Contact</a></li>
+                                 </ul>
+                             </nav>
+                         </div>
+                         <div class="mobile-menu"> </div>
+                     </div>
+                     <div class="col-lg-4 col-md-3">
+                         <div class="header-social">
+                             <a href="#" class="icon-3d"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#" class="icon-3d"><i class="fab fa-pinterest"></i></a>
+                             <a href="#" class="icon-3d"><i class="fab fa-twitter"></i></a>
+                             <a href="#" class="icon-3d"><i class="fab fa-behance"></i></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </header>
+
+     <!-- ===================================================== HEADER AREA START====================================================== -->
+
+
+
+
+     <!-- ==================================================REGISTER AREA START ================================================= -->
+
+     <!--  <div class="register-area">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-10 col-xl-9 mx-auto">
+
+                     <div class="registration-form">
+                         <form>
+                             <div class="form-icon">
+                                 <span><a href="#"> <i class="far fa-user"></i></a></span>
+                             </div>
+                             <div class="form-group">
+                                 <input type="text" class="form-control item" id="username" placeholder="Username">
+                             </div>
+                             <div class="form-group">
+                                 <input type="password" class="form-control item" id="password" placeholder="Password">
+                             </div>
+                             <div class="form-group">
+                                 <input type="text" class="form-control item" id="email" placeholder="Email">
+                             </div>
+                             <div class="form-group">
+                                 <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
+                             </div>
+                             <div class="form-group">
+                                 <input type="text" class="form-control item" id="birth-date" placeholder="Birth Date">
+                             </div>
+                             <div class="form-group">
+                                 <button type="button" class="btn btn-block create-account"> Register</button>
+                             </div>
+                         </form>
+                         <div class="social-media">
+                             <h5>Sign up with social media</h5>
+                             <div class="social-icons">
+                                 <a href="#"><i class="fab fa-facebook-f" title="Facebook"></i></a>
+                                 <a href="#"><i class="fab fa-google" title="Google"></i></a>
+                                 <a href="#"><i class="fab fa-twitter" title="Twitter"></i></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+     </div>
+-->
+
+
+
+
+     <div class="register-area pb-100 pt-100">
+         <div class="container">
+             <div class="row">
+                 <div class="col-xl-8 offset-xl-2">
+                     <div class="register-title mb-50">
+                         <h3>Register here</h3>
+                         <h2>USER REGISTRATION</h2>
+                         <p>Field mark <span>*</span> are required</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-xl-8 offset-xl-2">
+                     <form action="#" id="register-form">
+                         <div class="row">
+                             <div class="col-lg-2 col-md-2">
+                                 <label for="name">Your name <span>*</span></label>
+                             </div>
+                             <div class="col-lg-5 col-md-12">
+                                 <input type="text" placeholder="First Name">
+                             </div>
+                             <div class="col-lg-5 col-md-12">
+                                 <input type="text" placeholder="Last Name">
+                             </div>
+                         </div>
+
+                         <div class="row">
+                             <div class="col-lg-2">
+                                 <label for="email">Your Email <span>*</span></label>
+                             </div>
+                             <div class="col-lg-10">
+                                 <input type="text" placeholder="Hello@gmail.com">
+                             </div>
+                         </div>
+
+
+                         <div class="row">
+                             <div class="col-lg-2 pr-0">
+                                 <label for="phonenumber">Phone Number <span>*</span></label>
+                             </div>
+                             <div class="col-lg-10">
+                                 <input type="number" placeholder="Enter Your Number">
+                             </div>
+                         </div>
+
+                         <div class="row">
+                             <div class="col-lg-2">
+                                 <label for="Address">Address <span>*</span> </label>
+                             </div>
+                             <div class="col-lg-10">
+                                 <input type="text" placeholder="Your Address">
+                             </div>
+                         </div>
+
+                         <div class="row">
+                             <div class="col-lg-2">
+                                 <label for="Town">Town </label>
+                             </div>
+                             <div class="col-lg-10">
+                                 <input type="text" placeholder="">
+                             </div>
+                         </div>
+
+
+                         <div class="row">
+                             <div class="col-lg-2">
+                                 <label for="Religion">Religion <span>*</span> </label>
+                             </div>
+                             <div class="col-lg-10">
+                                 <input type="text" placeholder="Religion">
+                             </div>
+                         </div>
+
+
+                         <div class="row">
+                             <div class="col-lg-2">
+                                 <label for="Postcode">Postcode /Zip <span>*</span> </label>
+                             </div>
+                             <div class="col-lg-10">
+                                 <input type="text" placeholder="Postcode /Zip">
+                             </div>
+                         </div>
+
+                         <div class="row">
+                             <div class="col-lg-2">
+                                 <label for="Country">Country <span>*</span></label>
+                             </div>
+                             <div class="col-lg-10">
+                                 <select name="find-us" id="find-us">
+                                     <option value="United kingdom" selected>United kingdom</option>
+                                     <option value="Bangladesh">Bangladesh </option>
+                                     <option value="India">India</option>
+                                     <option value="Others">Others</option>
+                                 </select>
+                             </div>
+                         </div>
+
+                         <div class="row">
+                             <div class="col-lg-2">
+                                 <label>&nbsp;</label>
+                             </div>
+                             <div class="col-lg-10">
+                                 <a href="#" class="register-btn">Register</a>
+                             </div>
+                         </div>
+
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+
+     <!-- ==================================================REGISTER AREA END ================================================= -->
+
+
+
+     <!-- ======================================================= FOOTER AREA START ======================================================== -->
+
+     <footer class="footer-area pt-80  footer-bg p-relative ">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-3 col-md-6 col-sm-12 ">
+                     <div class="footer-widget mb-50 ">
+                         <div class="footer-widget-title">
+                             <h3>About Us</h3>
+                         </div>
+                         <div class="footer-widget-content">
+                             <div class="footer-about-area">
+                                 <p>Thereare awstra serttmarry variotions of passages of lorem ipsum avaliable. but the majority have suffred setru...</p>
+                                 <p>Thereare awstra serttmarry variotions of passages of lorem ipsum avaliable.</p>
+                                 <div class="social">
+                                     <ul>
+                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                         <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-3 col-md-6 col-sm-12">
+                     <div class="footer-widget mb-50 ">
+                         <div class="footer-widget-title">
+                             <h3>EXPLORE OUR WORK</h3>
+                         </div>
+                         <div class="footer-widget-content">
+                             <div class="footer-explorework-area">
+                                 <ul>
+                                     <li><a href="#">Criminal law</a></li>
+                                     <li><a href="#">Accident law</a></li>
+                                     <li><a href="#">Deveroe law</a></li>
+                                     <li><a href="#">Industrial law</a></li>
+                                     <li><a href="#">Bussiness law</a></li>
+                                     <li><a href="#">Family law</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-3 col-md-6 col-sm-12">
+                     <div class="footer-widget mb-50 ">
+                         <div class="footer-widget-title">
+                             <h3>KEEP IN TOUCH</h3>
+                         </div>
+                         <div class="footer-widget-content">
+                             <div class="footer-touch-area">
+                                 <ul>
+                                     <li><a href="#"><i class="far fa-clock"></i> sat-mon</a></li>
+                                     <li><a href="#"><i class="fas fa-map-marker-alt"></i> 150 Torrent Court Street Uk</a></li>
+                                     <li><a href="#"><i class="fas fa-phone"></i> (123)00 8888 999</a></li>
+                                     <li><a href="#"><i class="far fa-envelope"></i> info@themebasic.com</a></li>
+                                     <li><a href="#"><i class="fas fa-phone"></i> (123)00 8888 999 </a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-3 col-md-6 col-sm-8 pr-30">
+                     <div class="footer-widget mb-50 ">
+                         <div class="footer-widget-title">
+                             <h3>FLICKR GALLERY</h3>
+                         </div>
+                         <div class="footer-widget-content">
+                             <div class="footer-instafeed-area">
+                                 <div class="instafeed">
+                                     <a href="#"><img src="assets/img/insta-5.jpg" alt=""></a>
+                                 </div>
+
+                                 <div class="instafeed">
+                                     <a href="#"><img src="assets/img/insta-5.jpg" alt=""></a>
+                                 </div>
+
+                                 <div class="instafeed">
+                                     <a href="#"><img src="assets/img/insta-5.jpg" alt=""></a>
+                                 </div>
+
+                                 <div class="instafeed">
+                                     <a href="#"><img src="assets/img/insta-5.jpg" alt=""></a>
+                                 </div>
+                                 <div class="instafeed">
+                                     <a href="#"><img src="assets/img/insta-5.jpg" alt=""></a>
+                                 </div>
+                                 <div class="instafeed">
+                                     <a href="#"><img src="assets/img/insta-5.jpg" alt=""></a>
+                                 </div>
+                             </div>
+
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <div class="footer-copyright-text text-center" style="border: 1px solid #2d2e2e;">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <p>Miakolegal © All Rights Reserved</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+     </footer>
+
+     <!-- ======================================================= FOOTER AREA END  ======================================================== -->
+
+     <!--  scroll up area start -->
+     <div class="scroll-up" id="scroll" style="display: none;">
+         <a href="javascript:void(0);"><i class="fas fa-chevron-up"></i></a>
+     </div>
+     <!--  scroll up area start -->
+
+
+
+     <!-- All JS here -->
+     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+     <script src="assets/js/popper.min.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+     <script src="assets/js/jquery.counterup.min.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/owl.carousel.min.js"></script>
+     <script src="assets/js/one-page-nav-min.js"></script>
+     <script src="assets/js/slick.min.js"></script>
+     <script src="assets/js/jquery.meanmenu.min.js"></script>
+     <script src="assets/js/wow.min.js"></script>
+     <script src="assets/js/main.js"></script>
+ </body>
+
+ </html>
