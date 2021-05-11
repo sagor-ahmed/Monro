@@ -78,6 +78,10 @@
         font-size: 1.5rem;
     }
 
+    .main-menu ul li a {
+        margin-left: 2rem;
+    }
+
     /*slider*/
     .slider-active .slick-arrow {
         left: 50px;
@@ -122,7 +126,7 @@
     /*main menu*/
     .main-menu ul li a {
         font-size: 1.4rem;
-        margin-left: 0.8rem;
+        margin-left: 2rem;
     }
 
     /*store*/
@@ -175,7 +179,7 @@
         color: #020910;
         font-size: 1.4rem;
         font-weight: 500;
-        margin-left: 2rem;
+        margin-left: 0.8rem;
     }
 
     /*header*/
@@ -205,6 +209,10 @@
     /*about*/
     .about-content {
         margin-bottom: 2.5rem;
+    }
+
+    .respon-margin {
+        margin-bottom: 30px;
     }
 
     /*testimonial*/
@@ -292,12 +300,12 @@
         margin-bottom: 2.5rem;
     }
 
-    .counter-item {
-        margin-bottom: 25px;
+    .respon-margin {
+        margin-bottom: 30px;
     }
 
-    .footer-touch-area ul li {
-        display: block;
+    .counter-item {
+        margin-bottom: 25px;
     }
 
     /*testimonial*/
@@ -305,15 +313,11 @@
     .testimonial-area button.slick-arrow {
         left: -5.4rem;
     }
-
-    /*
-
+    
     /*footer*/
-
-    /*    .footer-copyright-text {
-        margin-top: 100px;
-    }*/
-
+    .footer-touch-area ul li {
+        display: block;
+    }
 }
 
 /* Large Mobile :480px. */

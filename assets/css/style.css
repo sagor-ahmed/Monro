@@ -6,7 +6,6 @@
 
     CSS INDEX
     ===================
-
     01. Theme default CSS	
     02. Header CSS	
     03. Slider CSS	
@@ -248,7 +247,9 @@ p {
 .pt-60 {
     padding-top: 60px;
 }
-
+.p-20{
+    padding: 20px!important;
+}
 .pb-50 {
     padding-bottom: 50px !important;
 }
@@ -497,7 +498,15 @@ a.slider-btn {
     right: 5rem !important;
 }
 
+.slider-active .slick-arrow:hover {
+    background: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
 
+.slider-active .slick-arrow:hover i {
+    color: #000;
+}
 
 /*===================================================================================*/
 /*  04. STORE CSS START
@@ -510,7 +519,7 @@ a.slider-btn {
 }
 
 .title {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     color: #0c0c0c;
     font-weight: 600;
     line-height: 1.3;
@@ -526,20 +535,26 @@ p.subtitle {
     line-height: 1.3;
 }
 
-.product-display {
+/*.product-display {
     min-height: 360px;
     min-width: 300px;
     max-width: 320px !important;
     position: relative;
-}
+}*/
 
+.product-display {
+    min-height: 415px;
+    min-width: 300px;
+    max-width: 320px;
+    position: relative;
+}
 .store-card {
     border-radius: 1rem;
     background-color: #fff;
     -webkit-box-shadow: 2px 15px 40px rgb(10 10 10 / 10%);
     box-shadow: 2px 15px 40px rgb(10 10 10 / 10%);
     color: #606060;
-    max-width: 100%;
+/*    max-width: 100%;*/
     margin-bottom: 4rem !important;
 }
 
@@ -640,102 +655,8 @@ p.subtitle {
 }
 
 
-
 /*===================================================================================*/
-/*  06. VIDEO CSS START
-/*===================================================================================*/
-
-/*video css*/
-
-.video-img {
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.video-img::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background: rgba(5, 108, 95, 0.8);
-    width: 95%;
-    height: 100%;
-}
-.video-content h2 {
-    font-size: 30px;
-    text-transform: capitalize;
-    margin-bottom: 19px;
-}
-
-.play-btn {
-    width: 85px;
-    height: 85px;
-    background: #E56950;
-    border-radius: 99999px;
-    display: inline-block;
-    text-align: center;
-    line-height: 80px;
-    -webkit-animation: pulse 2s infinite;
-    animation: pulse 2s infinite;
-}
-.pink-bg{
-    background: #E56950!important;
-}
-.play-btn:hover {
-    background: #f8a683;
-    color: #000;
-    -webkit-transition: .3s;
-    transition: .3s;
-}
-
-.video-btn a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.play-btn i {
-    color: #fff;
-}
-
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
-    }
-
-    70% {
-        -webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
-    }
-
-    70% {
-        -webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
-        box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    }
-}
-
-/*===================================================================================*/
-/*  07. COUNTER CSS START
+/*  06. COUNTER CSS START
 /*===================================================================================*/
 
 .counter-area {
@@ -789,11 +710,107 @@ p.subtitle {
     font-weight: 500;
 }
 
+
+
+/*===================================================================================*/
+/*  07. VIDEO CSS START
+/*===================================================================================*/
+
+.video-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(5, 108, 95, 0.8);
+    width: 95%;
+    height: 100%;
+}
+
+.video-content h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 19px;
+}
+
+.play-btn {
+    width: 85px;
+    height: 85px;
+    background: #E56950;
+    border-radius: 99999px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+
+.pink-bg {
+    background: #E56950 !important;
+}
+
+.play-btn:hover {
+    background: #f8a683;
+    color: #000;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.video-btn a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.play-btn i {
+    color: #fff;
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
 /*===================================================================================*/
 /*  08. TESTIMONIAL CSS START
 /*===================================================================================*/
 
-.testimonial-area .section-title h2 {
+.testimonial-area .section-title h2 ,.video-section .section-title h2 {
     color: #282828;
     font-weight: 600;
     font-family: "poppins", sans-serif;
@@ -801,7 +818,7 @@ p.subtitle {
     margin-bottom: 2rem;
 }
 
-.testimonial-area .section-title h2::after {
+.testimonial-area .section-title h2::after, .video-section .section-title h2::after{
     content: "";
     position: absolute;
     background: #fcaf9e;
@@ -809,10 +826,12 @@ p.subtitle {
     width: 65px;
     top: 4.3rem;
     text-align: center;
-    margin-left: -15rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.testimonial-area .section-title p {
+.testimonial-area .section-title p , .video-section .section-title p {
     color: #939394;
     font-weight: 400;
     font-size: 1.5rem;
