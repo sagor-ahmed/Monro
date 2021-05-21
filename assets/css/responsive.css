@@ -44,7 +44,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
     /*header*/
     .header-social {
@@ -55,7 +55,6 @@
         padding: 2rem 0 0.9rem 0;
     }
 }
-
 
 
 /* Normal desktop :1200px. */
@@ -296,6 +295,16 @@
         margin-bottom: 2.5rem;
     }
 
+    .respon-mt {
+        display: block;
+        margin-top: -25px;
+    }
+
+    .about-section.pt-100.pb-100 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     .video-content {
         margin-bottom: 2.5rem;
     }
@@ -313,11 +322,13 @@
     .testimonial-area button.slick-arrow {
         left: -5.4rem;
     }
-    
+
     /*footer*/
     .footer-touch-area ul li {
         display: block;
     }
+
+
 }
 
 /* Large Mobile :480px. */
@@ -440,7 +451,6 @@
 
     .testimonial-slide.pt-50.slick-initialized.slick-slider .slick-arrow:last-child {
         right: 29% !important;
-
     }
 
     /*footer*/

@@ -87,18 +87,7 @@
     // meanmenu
     $('#mobile-menu').meanmenu({
         meanMenuContainer: '.mobile-menu',
-        meanScreenWidth: "768"
-    });
-
-
-
-
-    ////////////////////////////////////////////////////
-    // One Page Nav
-    var top_offset = $('.header-area').height() - 10;
-    $('.main-menu nav ul').onePageNav({
-        currentClass: 'active',
-        scrollOffset: top_offset,
+        meanScreenWidth: "992"
     });
 
 

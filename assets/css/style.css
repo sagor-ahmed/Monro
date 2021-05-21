@@ -14,6 +14,10 @@
     06. Counter CSS	
     07. Testimonial CSS	
     08. Foooter CSS	
+    09. privacy  policyCSS	
+    10.  Register CSS	
+    11. contact CSS	
+    12. Video Css
 	
 -----------------------------------------------------------------------------------*/
 /*
@@ -247,9 +251,11 @@ p {
 .pt-60 {
     padding-top: 60px;
 }
-.p-20{
-    padding: 20px!important;
+
+.p-20 {
+    padding: 20px !important;
 }
+
 .pb-50 {
     padding-bottom: 50px !important;
 }
@@ -454,6 +460,17 @@ a.slider-btn {
     color: red;
 }
 
+a.icon-3d {
+    background: #1d2779;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    line-height: 27px;
+    border-radius: 50%;
+    padding: 1px 6px;
+}
+
 /*===================================================================================*/
 /*  03. SLIDER CSS START
 /*===================================================================================*/
@@ -512,7 +529,6 @@ a.slider-btn {
 /*  04. STORE CSS START
 /*===================================================================================*/
 
-
 .store-img img {
     max-width: 15rem;
     height: 204px;
@@ -548,13 +564,14 @@ p.subtitle {
     max-width: 320px;
     position: relative;
 }
+
 .store-card {
     border-radius: 1rem;
     background-color: #fff;
     -webkit-box-shadow: 2px 15px 40px rgb(10 10 10 / 10%);
     box-shadow: 2px 15px 40px rgb(10 10 10 / 10%);
     color: #606060;
-/*    max-width: 100%;*/
+    /*    max-width: 100%;*/
     margin-bottom: 4rem !important;
 }
 
@@ -604,7 +621,6 @@ p.subtitle {
     transition: all .3s linear;
 }
 
-
 .buy-btn:hover {
     background-image: linear-gradient(109.27deg, #38ef7d -4.35%, #11998e 101.58%);
     -webkit-transition: .3s;
@@ -616,7 +632,6 @@ p.subtitle {
     opacity: 1;
     color: #fff;
 }
-
 
 /*===================================================================================*/
 /*  05. ABOUT  CSS START
@@ -810,7 +825,8 @@ p.subtitle {
 /*  08. TESTIMONIAL CSS START
 /*===================================================================================*/
 
-.testimonial-area .section-title h2 ,.video-section .section-title h2 {
+.testimonial-area .section-title h2,
+.video-section .section-title h2 {
     color: #282828;
     font-weight: 600;
     font-family: "poppins", sans-serif;
@@ -818,7 +834,8 @@ p.subtitle {
     margin-bottom: 2rem;
 }
 
-.testimonial-area .section-title h2::after, .video-section .section-title h2::after{
+.testimonial-area .section-title h2::after,
+.video-section .section-title h2::after {
     content: "";
     position: absolute;
     background: #fcaf9e;
@@ -831,7 +848,8 @@ p.subtitle {
     transform: translate(-50%, -50%);
 }
 
-.testimonial-area .section-title p , .video-section .section-title p {
+.testimonial-area .section-title p,
+.video-section .section-title p {
     color: #939394;
     font-weight: 400;
     font-size: 1.5rem;
@@ -842,7 +860,6 @@ p.subtitle {
     padding: 3.5rem 2.5rem;
     outline: none;
 }
-
 
 .testimonial-content .rating ul li a {
     font-size: 1.5rem;
@@ -920,7 +937,7 @@ p.subtitle {
 }
 
 
-/*slick slide*/
+/*testsmonial lick slide active*/
 
 .testimonial-area .slick-slide img {
     display: inline;
@@ -961,6 +978,7 @@ p.subtitle {
     display: block;
     border: 2px solid #000 !important;
 }
+
 
 /*===================================================================================*/
 /*  09. FOOTER CSS START
